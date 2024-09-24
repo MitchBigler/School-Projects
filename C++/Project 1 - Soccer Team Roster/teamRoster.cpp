@@ -13,7 +13,6 @@ int main() {
     char option;
     bool menu = true;
 
-/*FIXME
     // Get player num/rating numMember times
     for (size_t i = 0; i < numMembers; i++) {
         cout << "Enter player " << i + 1 << "'s jersey number:" << endl;
@@ -25,10 +24,6 @@ int main() {
         jerseyNums.push_back(jersey);
         ratings.push_back(rating);
     }
-*/
-    // TEST INFO
-    jerseyNums.push_back(10);jerseyNums.push_back(20);jerseyNums.push_back(30);jerseyNums.push_back(40);jerseyNums.push_back(50);
-    ratings.push_back(100);ratings.push_back(88);ratings.push_back(75);ratings.push_back(80);ratings.push_back(99);
 
     // lambda functions
     auto addPlayer = [&ratings, &jerseyNums, &numMembers, &jersey, &rating](){
@@ -63,8 +58,6 @@ int main() {
     auto updateRating = [&ratings, &jerseyNums, &numMembers, &jersey, &rating](){
     cout << "Enter a new player's jersey number:" << endl;
     cin >> jersey;
-
-    int jerseyIndex;
 
     for (int i = 0; i < jerseyNums.size(); i++){
         if (jerseyNums.at(i) == jersey) {
