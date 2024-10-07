@@ -5,7 +5,7 @@ def calculate_gpa(courseList):
     sumGrades = 0
     credits = 0
     for course in courseList:
-        sumGrades += course.grade() * course.credit_hr()
+        sumGrades += course.grade() * course.credit_hour()
         credits += course.credit_hr()
     if credits == 0:
         return 0
