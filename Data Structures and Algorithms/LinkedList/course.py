@@ -3,13 +3,13 @@
 class Course:
     ''' Course object '''
     def __init__(self, number=0, name="", credit_hour=0.0, grade=0.0):
-        if not isinstance(number, int):
+        if not isinstance(number, int) or number < 0:
             raise ValueError
         if not isinstance(name, str):
             raise ValueError
-        if not isinstance(credit_hour, float):
+        if not isinstance(credit_hour, float) or credit_hour < 0:
             raise ValueError
-        if not isinstance(grade, float):
+        if not isinstance(grade, float) or grade < 0:
             raise ValueError
         
         self._number = number

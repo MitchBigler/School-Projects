@@ -5,7 +5,7 @@ def calculate_gpa(courseList):
     sumGrades = 0
     credits = 0
     for course in courseList:
-        sumGrades += course.grade() * course.credit_hour()
+        sumGrades += course.grade() * course.credit_hr()
         credits += course.credit_hr()
     if credits == 0:
         return 0
@@ -18,7 +18,14 @@ def is_sorted(lyst):
     return True
 
 def main():
-    pass
-  
+    test_list = SList()
+    print(test_list)
+    test_list.insert(Course(100, "math", 3.0, 1.0))
+    test_list.insert(Course(200, "english", 3.0, 1.0))
+    test_list.insert(Course(50, "prog", 3.0, 1.0))
+    print(test_list)
+    test_list.remove(100)
+    print(test_list)
+    print(test_list.find(50))
 if __name__ == "__main__":
     main()

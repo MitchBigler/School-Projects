@@ -10,6 +10,9 @@ class SList:
         
         def __gt__(self, other):
             return self.value > other.value
+        
+        def number(self):
+            return self.value.number()
 
     def __init__ (self):
         self._head = None
@@ -29,26 +32,22 @@ class SList:
 
     '''Insert a new value in the list. Maintain nondecreasing ordering of elements'''
     def insert(self, value):
-        # Create a new obj of class SListNode that has the value of value
-        new_node = self.SListNode(value)
-
-        # New node is the head
-        if self._head is None or new_node.value < self._head.value:
+        new_node =self.SListNode(value)
+        
+        # New value inserted at the head
+        if self._head is None or self._head.value > value:
             new_node.next = self._head
             self._head = new_node
-        # New node compared against next until less than or end
-        else:
-            # Set the new node between head and second item
-            prev_node = self._head
-            cur_node = self._head.next
-
-            # While new node is greater than current's next node
-            while cur_node is not None and new_node.value >= cur_node.value:
-                prev_node = cur_node
-                cur_node = cur_node.next
-            
-            prev_node.next = new_node
-            new_node.next = cur_node
+            return
+        
+        # Find the correct position
+        cur_node = self._head
+        while cur_node.next is not None and cur_node.next.value < value:
+            cur_node = cur_node.next
+        
+        # Insert the node
+        new_node.next = cur_node.next
+        cur_node.next = new_node
     
     '''Search for a value in the list, return it if found, None otherwise'''
     def find(self, value):
@@ -56,41 +55,42 @@ class SList:
         cur_node = self._head
 
         while cur_node is not None:
-            if cur_node.value == value:
-                return True
+            if cur_node.value.number() == value:
+                return cur_node
             cur_node = cur_node.next
-        return False
+        return None
 
     '''Remove the first occurance of value.'''
     def remove(self, value):
         cur_node = self._head
 
-        if cur_node is not None and cur_node.value == value:
+        if cur_node is not None and cur_node.value.number() == value:
             self._head = cur_node.next
-            return
+            return True
 
         prev_node = None
-        while cur_node is not None and cur_node.value != value:
+        while cur_node is not None and cur_node.value.number() != value:
             prev_node = cur_node
             cur_node = cur_node.next
 
         if cur_node is None:
-            return
+            return False
 
         prev_node.next = cur_node.next
+        return True
         
 
     '''Remove all instances of value'''
     def remove_all(self, value):
         cur_node = self._head
 
-        while cur_node is not None and cur_node.value == value:
+        while cur_node is not None and cur_node.value.number() == value:
             self._head = cur_node.next
             cur_node = self._head
 
         prev_node = None
         while cur_node is not None:
-            if cur_node.value == value:
+            if cur_node.value.number() == value:
                 prev_node.next = cur_node.next
             else:
                 prev_node = cur_node
