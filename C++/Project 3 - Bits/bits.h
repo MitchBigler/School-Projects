@@ -18,10 +18,21 @@ public:
         assert(0 <= pos && pos < NBITS);
         return bits & (IType(1) << pos);
     }
-    void set(int pos);        // Sets the bit at position pos
-    void set();               // Sets all bits
-    void reset(int pos);      // Resets (makes zero) the bit at position pos
-    void reset();             // Resets all bits
+    void set(int pos) {  // Sets the bit at position pos
+        bits |= (IType(1) << pos);
+    }
+
+    void set() {            // Sets all bits
+        bits |= -1;
+    }
+
+    void reset(int pos) {     // Resets (makes zero) the bit at position pos
+        bits &= (IType(1) << pos);
+    }
+
+    void reset() {             // Resets all bits
+        bits &= 0;
+    }
     void assign(int pos, bool val); // Sets or resets the bit at position pos depending on val
     void assign(IType n);     // Replaces the underlying integer with n
     void toggle(int pos);     // Flips the bit at position pos
