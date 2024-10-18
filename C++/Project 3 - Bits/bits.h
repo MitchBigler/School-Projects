@@ -11,38 +11,109 @@ public:
     Bits(IType n) {
         bits = n;
     }
+
+    // Returns size of bits
     static int size() {
         return NBITS;
     }
-    bool at(int pos) const {  // Returns (tests) the bit at bit-position pos
+
+    // Returns (tests) the bit at bit-position pos
+    bool at(int pos) const {  
         assert(0 <= pos && pos < NBITS);
         return bits & (IType(1) << pos);
     }
-    void set(int pos) {  // Sets the bit at position pos
+
+    // Sets the bit at position pos
+    void set(int pos) {  
         bits |= (IType(1) << pos);
     }
-
-    void set() {            // Sets all bits
+    // Sets all bits
+    void set() {            
         bits |= -1;
     }
 
-    void reset(int pos) {     // Resets (makes zero) the bit at position pos
-        bits &= (IType(1) << pos);
+    // Resets (makes zero) the bit at position pos
+    void reset(int pos) {     
+        bits &= ~(IType(1) << pos);
+    }
+    // Resets all bits
+    void reset() {             
+        bits = 0;
     }
 
-    void reset() {             // Resets all bits
-        bits &= 0;
+    // Sets or resets the bit at position pos depending on val
+    void assign(int pos, bool val) { 
+        if (val){
+            bits |= (IType(1) << pos);
+        } else {
+            bits &= ~(IType(1) << pos);
+        }
     }
-    void assign(int pos, bool val); // Sets or resets the bit at position pos depending on val
-    void assign(IType n);     // Replaces the underlying integer with n
-    void toggle(int pos);     // Flips the bit at position pos
-    void toggle();            // Flips all bits
-    void shift(int n);        // If n > 0, shifts bits right n places; if n < 0, shifts left
-    void rotate(int n);       // If n > 0, rotates right n places; if n < 0, rotates left
-    int ones() const;         // Returns how many bits are set in the underlying integer
+    // Replaces the underlying integer with n
+    void assign(IType n){
+        bits = n;
+    }
+
+    // Flips the bit at position pos
+    void toggle(int pos) {
+        bits ^= (IType(1) << pos);
+    }
+    // Flips all bits
+    void toggle(){
+        bits ^= -1;
+    }
+
+    // If n > 0, shifts bits right n places; if n < 0, shifts left
+    void shift(int n){
+        if (n > 0) {
+            bits >>= n;
+        } else {
+            bits <<= -n;
+        }
+    }
+
+    // If n > 0, rotates right n places; if n < 0, rotates left
+    void rotate(int n) {
+        if (n > 0) { // Rotate Right
+            while (n > 0) {
+                if (bits & IType(1)) {
+                    bits = (bits >> IType(1));
+                    this->set(NBITS-1);
+                } else {
+                    bits = (bits >> IType(1));
+                }
+                n -= 1;
+            }
+        }
+        if (n < 0) { // Rotate Left
+            while (n < 0) {
+                if (this->at(NBITS-1)) {
+                    bits = (bits << IType(1));
+                    this->set(0);
+                } else {
+                    bits = (bits << IType(1));
+                }
+                n += 1;
+            }           
+        }
+    }
+
+    // Returns how many bits are set in the underlying integer
+    int ones() const {
+        int num = 0;
+        IType nbits = bits;
+        while (nbits) {
+            if (nbits & IType(1)) {
+                num += IType(1);
+            }
+            nbits >>= IType(1);
+        }
+        return num;
+    }
     int zeroes() const {      // Returns how many bits are reset in the underlying integer
         return NBITS - ones();
     }
+
     IType to_int() const {
         return bits;
     }
