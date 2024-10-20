@@ -7,12 +7,12 @@ class Stack:
     
     def pop(self):
         if not self.items:
-            raise IndexError("empty stack")
+            raise IndexError
         return self.items.pop()
     
     def top(self):
         if not self.items:
-            raise IndexError("empty stack")
+            raise IndexError
         return self.items[-1]
     
     def size(self):
