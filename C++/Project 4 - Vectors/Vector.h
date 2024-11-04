@@ -5,6 +5,7 @@
 using std::size_t;
 
 class Vector {
+private:
     enum {CHUNK = 10};
     size_t capacity;    // Size of the current array allocation (total number of ints, in use or not)
     size_t n_elems;     // Number of int spaces currently in use, starting from position 0
