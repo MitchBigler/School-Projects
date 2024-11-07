@@ -4,7 +4,6 @@ class BSTNode:
         # A-z, 0-9
         self.key = key
         self.value = val
-        # self.value = val
         self.left_child = left
         self.right_child = right
         self.parent = parent

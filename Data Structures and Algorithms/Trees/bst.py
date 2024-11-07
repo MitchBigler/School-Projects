@@ -1,39 +1,124 @@
-'''Binary Search Tree ADT Class'''
-from bst_node import BSTNode
-
 class BST:
+    class BSTNode:
+        def __init__(self,key,val,left=None,right=None, parent=None):
+            # BSTNode(Pair(c), Pair(c))
+            # A-z, 0-9
+            self.key = key
+            self.value = val
+            self.left_child = left
+            self.right_child = right
+            self.parent = parent
+            self.balance_factor = 0 # used to construct AVL tree
+
+        def has_left_child(self):
+            return self.left_child
+
+        def has_right_child(self):
+            return self.right_child
+
+        def is_left_child(self):
+            return self.parent and self.parent.left_child == self
+
+        def is_right_child(self):
+            return self.parent and self.parent.right_child == self
+
+        def is_root(self):
+            return not self.parent
+
+        def is_leaf(self):
+            return not (self.right_child or self.left_child)
+
+        def has_anyChildren(self):
+            return self.right_child or self.left_child
+
+        def has_both_children(self):
+            return self.right_child and self.left_child
+
+        def replaceNodeData(self,key,value,lc,rc):
+            self.key = key
+            self.value = value
+            self.left_child = lc
+            self.right_child = rc
+            if self.has_left_child():
+                self.left_child.parent = self
+            if self.has_right_child():
+                self.right_child.parent = self
+
+        def splice_out(self):
+            if self.is_leaf():
+                if self.is_left_child():
+                    self.parent.left_child = None
+                else:
+                    self.parent.right_child = None
+            elif self.has_anyChildren():
+                if self.has_left_child():
+                    if self.is_left_child():
+                        self.parent.left_child = self.left_child
+                    else:
+                        self.parent.right_child = self.left_child
+                    self.left_child.parent = self.parent
+                else:
+                    if self.is_left_child():
+                        self.parent.left_child = self.right_child
+                    else:
+                        self.parent.right_child = self.right_child
+                    self.right_child.parent = self.parent
+
+        def find_min(self):
+            current = self
+            while current.has_left_child():
+                current = current.left_child
+            return current
+
+        def show_tree(self, level = 0):
+            tree_str = f'|{"----|"*level}{self.key}\n'
+            if self.left_child != None:
+                left_c = self.left_child
+                tree_str += left_c.show_tree(level+1)
+            elif self.right_child != None:
+                tree_str += f'|{"----|"*(level+1)}None\n'
+            if self.right_child != None:
+                right_c = self.right_child
+                tree_str += right_c.show_tree(level+1)
+            elif self.left_child != None:
+                tree_str += f'|{"----|"*(level+1)}None\n'
+            return tree_str
+
+        def __str__(self):
+            return self.key
+    
     def __init__(self):
         self.root = None
-        self.size = 0
+        self.node_count = 0
 
     def __str__(self):
         return self.root.show_tree()
 
     def __len__(self):
-        return self.size
+        return self.node_count
 
     def put(self, key, val):
         if self.root:
             self._put(key, val, self.root)
         else:
-            self.root = BSTNode(key, val)
-        self.size = self.size + 1
+            self.root = BST.BSTNode(key, val)
+        self.node_count += 1
+
 
     def _put(self, key, val, currentNode):
         if key < currentNode.key:
             if currentNode.has_left_child():
                 self._put(key, val, currentNode.left_child)
             else:
-                currentNode.left_child = BSTNode(key, val, parent=currentNode)
+                currentNode.left_child = BST.BSTNode(key, val, parent=currentNode)
         else:
             if currentNode.has_right_child():
                 self._put(key, val, currentNode.right_child)
             else:
-                currentNode.right_child = BSTNode(key, val, parent=currentNode)
+                currentNode.right_child = BST.BSTNode(key, val, parent=currentNode)
 
     def __setitem__(self, k, v):
         self.put(k, v)
-
 
     def inorder(self):
         result = []
@@ -43,7 +128,7 @@ class BST:
     def _inorder(self, node, items):
         if node:
             self._inorder(node.left_child, items)
-            items.append((node.key, node.value))
+            items.append(node.value)
             self._inorder(node.right_child, items)
 
     def get(self, key):
@@ -56,7 +141,6 @@ class BST:
     def _get(self, key, currentNode):
         if not currentNode:
             return None
-
         if currentNode.key == key:
             return currentNode
         elif key < currentNode.key:
@@ -68,42 +152,37 @@ class BST:
         return self.get(key)
 
     def __contains__(self, key):
-        if self._get(key, self.root):
-            return True
-        else:
-            return False
+        return self._get(key, self.root) is not None
 
-    def delete(self, key):
-        if self.size > 1:
+    def remove(self, key):
+        if self.node_count > 1:
             nodeToRemove = self._get(key, self.root)
             if nodeToRemove:
-                self.remove(nodeToRemove)
-                self.size = self.size - 1
+                self._remove(nodeToRemove)
+                self.node_count -= 1
             else:
                 raise KeyError("Error, key not in tree")
-        elif self.size == 1 and self.root.key == key:
+        elif self.node_count == 1 and self.root.key == key:
             self.root = None
-            self.size = self.size - 1
+            self.node_count -= 1
         else:
             raise KeyError("Error, key not in tree")
 
     def __delitem__(self, key):
         self.delete(key)
-    def is_empty(self):
-        return not self.size
-    def remove(self, currentNode):
-        if currentNode.is_leaf():  # leaf
+
+    def _remove(self, currentNode):
+        if currentNode.is_leaf():
             if currentNode == currentNode.parent.left_child:
                 currentNode.parent.left_child = None
             else:
                 currentNode.parent.right_child = None
-        elif currentNode.has_bothChildren():  # interior
+        elif currentNode.has_both_children():
             succ = currentNode.right_child.find_min()
             succ.splice_out()
             currentNode.key = succ.key
             currentNode.value = succ.value
-
-        else:  # this node has one child
+        else:
             if currentNode.has_left_child():
                 if currentNode.is_left_child():
                     currentNode.left_child.parent = currentNode.parent
@@ -133,6 +212,52 @@ class BST:
                         currentNode.right_child.right_child,
                     )
 
+    def find(self, item):
+        node = self._get(item, self.root)
+        if node:
+            return node.value
+        raise ValueError()
+
+    def size(self):
+        return self.node_count
+
+    def is_empty(self):
+        return self.node_count == 0
+
+    def height(self):
+        return self._height(self.root)
+
+    def _height(self, node):
+        if node is None:
+            return -1
+        left_height = self._height(node.left_child)
+        right_height = self._height(node.right_child)
+        return 1 + max(left_height, right_height)
+
+    def preorder(self):
+        items = []
+        self._preorder(self.root, items)
+        return items
+
+    def _preorder(self, node, items):
+        if node:
+            items.append(node.value)
+            self._preorder(node.left_child, items)
+            self._preorder(node.right_child, items)
+
+    def postorder(self):
+        items = []
+        self._postorder(self.root, items)
+        return items
+
+    def _postorder(self, node, items):
+        if node:
+            self._postorder(node.left_child, items)
+            self._postorder(node.right_child, items)
+            items.append(node.value)
+
+    def print_tree(self):
+        print(self.inorder())
 
 
 def build_tree():
@@ -148,67 +273,27 @@ def build_tree():
     return mytree
 
 if __name__ == "__main__":
-
     mytree = build_tree()
-
-
     print(mytree[60])
     print(f'55 is in the tree: {55 in mytree}')
     print(f'100 is in the tree: {100 in mytree}')
-
     print(f'14: {mytree[14]}')
     print(f'31: {mytree[31]}')
     print(f'93: {mytree[93]}')
-
     print("Binary Search Tree:")
     print(mytree)
-
     print("Inorder traversal of the binary tree:")
     print(mytree.inorder())
-    #
     del mytree[93]
-    print("\ndelete nod 93")  # leaf node, is right child
+    print("\ndelete node 93") 
     print(mytree)
-    #
     print("Inorder traversal of the binary tree:")
     print(mytree.inorder())
-
     del mytree[31]
-    print("\ndelete nod 31")  # has two children
+    print("\ndelete node 31") 
     print(mytree)
     print(mytree.inorder())
-    #
-    del mytree[50]  # is right child, has right child
-    print("\ndelete nod 50")
+    del mytree[50] 
+    print("\ndelete node 50")
     print(mytree)
     print(mytree.inorder())
-
-    #### MY METHODS ############################################################################
-
-    def size(): #Return the number of nodes in the tree.
-        return size
-
-    def is_empty(): #Return True if there aren’t any nodes in the tree, False otherwise.
-        return (size == 0)
-    
-    def height(): #Return the height of the tree, defined is the length of the path from the root to its deepest leaf. A tree with zero nodes has a height of -1.
-
-
-    def add(item): #Add item to its proper place in the tree. Return the modified tree.
-
-    def remove(item): #Remove item from the tree if it exists, if not – do nothing. Return the resulting tree. Note: when removing an item from the tree (if it isn't a leaf node which is trivial), the easiest thing to do is to replace the value in the node to be removed with either the rightmost value from the node's left subtree, or the leftmost value from the right subtree, and then remove the node whose value you "stole". Please note that our tests assume that you give precedence to the leftmost value from the right subtree.
-
-    def find(item): #Return the matched item from the tree (not the node that contains it, and not the item used as the parameter). If item is not in the tree, raise a ValueError.
-
-    def inorder(): #Return a list with the data items in order of inorder traversal.
-
-    def preorder(self): #Return a list with the data items in order of preorder traversal.
-        if self.root:
-            items = []
-            preorder(self.get_left_child()) + preorder(self.get_right_child())
-
-            return items
-        
-    def postorder(): #Return a list with the data items in order of postorder traversal.
-
-    def print_tree(): #print the values in the tree (in any way you wish). Useful for debugging purposes (a good example of this can be found in section 5.12.1 under the TreePrint.py file).

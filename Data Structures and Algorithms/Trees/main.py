@@ -15,25 +15,37 @@ class Pair:
         self.count = count
     
     def __eq__(self, other):
-        return self.letter == other.letter
+        if isinstance(other, Pair):
+            return self.letter == other.letter
+        return self.letter == other
     
     def __hash__(self):
         return hash(self.letter)
 
     def __ne__(self, other):
-        return self.letter != other.letter
+        if isinstance(other, Pair):
+            return self.letter != other.letter
+        return self.letter >= other.letter
 
     def __lt__(self, other):
-        return self.letter < other.letter
+        if isinstance(other, Pair):
+            return self.letter < other.letter
+        return self.letter < other
 
     def __le__(self, other):
-        return self.letter <= other.letter
+        if isinstance(other, Pair):
+            return self.letter <= other.letter
+        return self.letter >= other.letter
 
     def __gt__(self, other):
-        return self.letter > other.letter
+        if isinstance(other, Pair):
+            return self.letter > other.letter
+        return self.letter >= other.letter
 
     def __ge__(self, other):
-        return self.letter >= other.letter
+        if isinstance(other, Pair):
+            return self.letter >= other.letter
+        return self.letter >= other
 
     def __repr__(self):
         return f'({self.letter}, {self.count})'
@@ -42,19 +54,38 @@ class Pair:
         return f'({self.letter}, {self.count})'
 
 def make_tree():
-    ''' A helper function to build the tree.
+    """Reads characters from a text file and constructs a BST
+    with each unique letter and its count.
+
+    Returns:
+        BST: Binary search tree with `Pair` objects.
+    """
+    tree = BST()
     
-    The test code depends on this function being available from main.
-    :param: None
-    :returns: A binary search tree
-    '''
-    pass
+    file_path = Path("around-the-world-in-80-days-3.txt")
+    
+    with file_path.open("r", encoding="utf-8") as file:
+        for char in file.read():
+            if char in whitespace or char in punctuation:
+                continue
+            
+            char = char.lower()
+            
+            pair = Pair(char)
+            if char in tree:
+                existing_pair = tree.get(char)
+                existing_pair.count += 1
+            else:
+                tree.put(char, pair)
+    
+    return tree
 
 def main():
-    ''' Program kicks off here.
-
-    '''
-    pass
+    """Main function to build and test the tree."""
+    letter_tree = make_tree()
+    
+    print("Inorder traversal of the letter frequency tree:")
+    print(letter_tree.inorder())
     
 if __name__ == "__main__":
     main()
