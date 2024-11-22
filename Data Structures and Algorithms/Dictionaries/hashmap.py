@@ -21,7 +21,7 @@ class HashMap:
             buckets_probed += 1
 
         # Bucket not found
-        return None
+        raise KeyError
 
     # Add (key,value) to map, resize if >= 80%
     def set(self, key, value):
@@ -36,6 +36,11 @@ class HashMap:
             if self.buckets[bucket] is None or self.buckets[bucket] == 'E':
                 self.buckets[bucket] = (key, value)
                 self._size += 1
+                return True
+            
+            # Update if already exists
+            if self.buckets[bucket][0] == key:
+                self.buckets[bucket] = (key, value)
                 return True
             
             # Increment bucket index
@@ -59,6 +64,8 @@ class HashMap:
             # Increment bucket index
             bucket = (bucket + 1) % self._capacity
             buckets_probed += 1
+
+        raise KeyError
 
     # Empty and reset capacity
     def clear(self):
@@ -98,3 +105,12 @@ class HashMap:
     # Return current load factor
     def load_factor(self):
         return self._size / self._capacity
+    
+    # Return list of buckets
+    def keys(self):
+        key_list = []
+
+        for bucket in self.buckets:
+            if bucket is not None and bucket != 'E':
+                key_list.append(bucket[0])
+        return key_list
