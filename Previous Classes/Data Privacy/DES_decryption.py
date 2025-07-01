@@ -1,4 +1,6 @@
-###### DES Permutation Tables #####
+###### DES Decryption Script ######
+
+##### DES Permutation Tables #####
 PC1 = [
     57, 49, 41, 33, 25, 17, 9,  1, 58, 50, 42, 34, 26, 18,
     10, 2, 59, 51, 43, 35, 27, 19, 11, 3, 60, 52, 44, 36,
@@ -101,11 +103,10 @@ S_BOXES = [
 # Shift Amounts
 SHIFTS = [1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1]
 
-
-##### FUNCTIONS ######
+##### FUNCTIONS #####
 def permute(bits, table):
     ''' Returns bits in a new order defined by table '''
-    return [bits[i -1] for i in table]
+    return [bits[i - 1] for i in table]
 
 def generate_subkeys(key):
     """ Returns 16 subkeys from the key """
@@ -133,34 +134,35 @@ def s_box(bits):
     result = []
 
     for i in range(8):
-        # Get 6 bits for each S Box
         chunk = bits[i * 6: (i + 1) * 6]
 
         row = (chunk[0] << 1) | chunk[5]
         col = (chunk[1] << 3) | (chunk[2] << 2) | (chunk[3] << 1) | chunk[4]
 
-        # Get value and set to 4 bits
         s_box_value = S_BOXES[i][row][col]
         result.extend([int(b) for b in f"{s_box_value:04b}"])
     return result
 
-def encrypt(plain, key):
-    # Set plain text to binary
-    M = [int(b) for b in f"{plain:064b}"]
+def decrypt(cipher, key):
+    # Set cipher text to binary
+    C = [int(b) for b in f"{cipher:064b}"]
 
-    permuted_M = permute(M, IP)
+    permuted_C = permute(C, IP)
 
     # Initialize halves
-    L = permuted_M[:32]
-    R = permuted_M[32:]
+    L = permuted_C[:32]
+    R = permuted_C[32:]
 
     subkeys = generate_subkeys(key)
 
-    # 16 rounds of encrytion
+    # Reverse order of subkeys
+    subkeys.reverse()
+
+    # 16 rounds of decryption
     for i in range(16):
         expanded_R = permute(R, E)
-        
-        # XOR with subkey
+
+        # XOR with reversed subkey
         xored = [b1 ^ b2 for b1, b2 in zip(expanded_R, subkeys[i])]
 
         substituted = s_box(xored)
@@ -171,17 +173,17 @@ def encrypt(plain, key):
         # Update halves
         L = R
         R = new_R
-    
+
     # Return hex value
     return f"{int(''.join(map(str, permute(R + L, FP))), 2):016X}"
 
 ##### MAIN FUNCTION #####
 def main():
-    M = int(input("Enter Plain Text To Encrypt: "), 16)
+    C = int(input("Enter Cipher Text To Decrypt: "), 16)
     K = int(input("Enter Key: "), 16)
 
-    C = encrypt(M, K)
-    print(f"C: {C}")
+    M = decrypt(C, K)
+    print(f"M: {M}")
 
 if __name__ == "__main__":
     main()
