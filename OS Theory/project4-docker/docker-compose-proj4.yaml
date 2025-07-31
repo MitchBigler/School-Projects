@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  mysql_db_container:
+    image: mysql:8.0.33
+    container_name: mysql_db_container1
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: UVUCS3520D4t4Th30ry!
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: dbauser
+      MYSQL_PASSWORD: UVUCS3520D4t4Th30ry!
+    ports:
+      - "4306:3306"
+    volumes:
+      - mysql_db_data_container:/var/lib/mysql
+
+volumes:
+  mysql_db_data_container:

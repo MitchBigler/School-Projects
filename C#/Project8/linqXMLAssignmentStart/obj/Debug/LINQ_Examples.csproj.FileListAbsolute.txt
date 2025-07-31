@@ -1,0 +1,51 @@
+c:\users\barron\documents\visual studio 2012\Projects\LINQ_Examples\LINQ_Examples\bin\Debug\LINQ_Examples.exe.config
+c:\users\barron\documents\visual studio 2012\Projects\LINQ_Examples\LINQ_Examples\obj\Debug\LINQ_Examples.csprojResolveAssemblyReference.cache
+c:\users\barron\documents\visual studio 2012\Projects\LINQ_Examples\LINQ_Examples\bin\Debug\LINQ_Examples.exe
+c:\users\barron\documents\visual studio 2012\Projects\LINQ_Examples\LINQ_Examples\bin\Debug\LINQ_Examples.pdb
+c:\users\barron\documents\visual studio 2012\Projects\LINQ_Examples\LINQ_Examples\obj\Debug\LINQ_Examples.exe
+c:\users\barron\documents\visual studio 2012\Projects\LINQ_Examples\LINQ_Examples\obj\Debug\LINQ_Examples.pdb
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start\LINQ_Examples\bin\Debug\LINQ_Examples.exe.config
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start\LINQ_Examples\obj\Debug\LINQ_Examples.exe
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start\LINQ_Examples\obj\Debug\LINQ_Examples.pdb
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start - Copy\LINQ_Examples\bin\Debug\LINQ_Examples.exe.config
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start - Copy\LINQ_Examples\obj\Debug\LINQ_Examples.exe
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start - Copy\LINQ_Examples\obj\Debug\LINQ_Examples.pdb
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start - Copy\LINQ_Examples\bin\Debug\LINQ_Examples.exe
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start - Copy\LINQ_Examples\bin\Debug\LINQ_Examples.pdb
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_start - Copy\LINQ_Examples\obj\Debug\LINQ_Examples.csprojResolveAssemblyReference.cache
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\bin\Debug\LINQ_Examples.exe.config
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\obj\Debug\LINQ_Examples.exe
+C:\Users\Olivia Chiu\Desktop\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\Ex_Files_LINQ_CSharp_EssT\Ex_Files_LINQ_CSharp_EssT\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Desktop\Ex_Files_LINQ_CSharp_EssT\Ex_Files_LINQ_CSharp_EssT\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\Ex_Files_LINQ_CSharp_EssT\Ex_Files_LINQ_CSharp_EssT\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\Ex_Files_LINQ_CSharp_EssT\Ex_Files_LINQ_CSharp_EssT\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\Ex_Files_LINQ_CSharp_EssT\Ex_Files_LINQ_CSharp_EssT\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\Ex_Files_LINQ_CSharp_EssT\Ex_Files_LINQ_CSharp_EssT\Exercise Files\Ch05\05_01\05_01_Basic_LINQ_Query_Filtering_end\LINQ_Examples\obj\Debug\LINQ_Examples.csprojResolveAssemblyReference.cache
+C:\Users\lthac_000\Desktop\LinqTeamAssignment\linqAssignment\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Desktop\LinqTeamAssignment\linqAssignment\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\LinqTeamAssignment\linqAssignment\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\LinqTeamAssignment\linqAssignment\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\LinqTeamAssignment\linqAssignment\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\LinqTeamAssignment\linqAssignment\obj\Debug\LINQ_Examples.csprojResolveAssemblyReference.cache
+C:\Users\lthac_000\Desktop\linqAssignment\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Desktop\linqAssignment\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqAssignment\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqAssignment\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqAssignment\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqAssignment\obj\Debug\LINQ_Examples.csprojResolveAssemblyReference.cache
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\obj\Debug\LINQ_Examples.csprojResolveAssemblyReference.cache
+C:\Users\lthac\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Fall_2016\CS 3260\lessons\Lesson_8\Lesson_2\CS3216_wk8_2_code\linqAssignFinal\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqAssignFinal\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Desktop\linqAssignFinal\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqAssignFinal\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqAssignFinal\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqAssignFinal\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqAssignFinal\obj\Debug\LINQ_Examples.csprojResolveAssemblyReference.cache

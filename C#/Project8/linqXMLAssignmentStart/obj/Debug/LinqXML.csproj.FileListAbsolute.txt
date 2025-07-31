@@ -1,0 +1,44 @@
+C:\Users\lthac_000\Desktop\linqAssignFinal\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Desktop\linqAssignFinal\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqAssignFinal\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqAssignFinal\obj\Debug\LinqXML.csprojResolveAssemblyReference.cache
+C:\Users\lthac_000\Desktop\linqAssignFinal\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqAssignFinal\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqXMLAssignment\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Desktop\linqXMLAssignment\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqXMLAssignment\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqXMLAssignment\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqXMLAssignment\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqXMLAssignment\obj\Debug\LinqXML.csprojResolveAssemblyReference.cache
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Summer_2017\CS3260\lessons\Lesson_10_LINQ\linqXMLAssignment\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Summer_2017\CS3260\lessons\Lesson_10_LINQ\linqXMLAssignment\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Summer_2017\CS3260\lessons\Lesson_10_LINQ\linqXMLAssignment\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Summer_2017\CS3260\lessons\Lesson_10_LINQ\linqXMLAssignment\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Summer_2017\CS3260\lessons\Lesson_10_LINQ\linqXMLAssignment\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Dropbox\Lynn\Work Folders\Work Folder\my stuff\UVU\Summer_2017\CS3260\lessons\Lesson_10_LINQ\linqXMLAssignment\obj\Debug\LinqXML.csprojResolveAssemblyReference.cache
+C:\Users\lthac_000\Desktop\linqXMLTeamAssignment (1)\linqXMLAssignment\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac_000\Desktop\linqXMLTeamAssignment (1)\linqXMLAssignment\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqXMLTeamAssignment (1)\linqXMLAssignment\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqXMLTeamAssignment (1)\linqXMLAssignment\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac_000\Desktop\linqXMLTeamAssignment (1)\linqXMLAssignment\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac_000\Desktop\linqXMLTeamAssignment (1)\linqXMLAssignment\obj\Debug\LinqXML.csprojResolveAssemblyReference.cache
+C:\Users\lthac\Desktop\linqXMLTeamAssignment-1\linqXMLTeamAssignment\linqXMLAssignment\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac\Desktop\linqXMLTeamAssignment-1\linqXMLTeamAssignment\linqXMLAssignment\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac\Desktop\linqXMLTeamAssignment-1\linqXMLTeamAssignment\linqXMLAssignment\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac\Desktop\linqXMLTeamAssignment-1\linqXMLTeamAssignment\linqXMLAssignment\obj\Debug\LinqXML.csprojAssemblyReference.cache
+C:\Users\lthac\Desktop\linqXMLTeamAssignment-1\linqXMLTeamAssignment\linqXMLAssignment\obj\Debug\LinqXML.csproj.CoreCompileInputs.cache
+C:\Users\lthac\Desktop\linqXMLTeamAssignment-1\linqXMLTeamAssignment\linqXMLAssignment\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac\Desktop\linqXMLTeamAssignment-1\linqXMLTeamAssignment\linqXMLAssignment\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2020\CS3260\lessons\Lesson_12_LINQ_XML\Learning_Team_XMLAssignment\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2020\CS3260\lessons\Lesson_12_LINQ_XML\Learning_Team_XMLAssignment\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2020\CS3260\lessons\Lesson_12_LINQ_XML\Learning_Team_XMLAssignment\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2020\CS3260\lessons\Lesson_12_LINQ_XML\Learning_Team_XMLAssignment\linqXMLAssignmentStart\obj\Debug\LinqXML.csprojAssemblyReference.cache
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2020\CS3260\lessons\Lesson_12_LINQ_XML\Learning_Team_XMLAssignment\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2020\CS3260\lessons\Lesson_12_LINQ_XML\Learning_Team_XMLAssignment\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.pdb
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.exe.config
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.exe
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.pdb
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\obj\Debug\LinqXML.csprojAssemblyReference.cache
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\obj\Debug\LinqXML.csproj.CoreCompileInputs.cache
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.exe
+C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.pdb

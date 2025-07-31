@@ -1,0 +1,22 @@
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_Lab10\bin\Debug\CS3260_Lab12_KH.exe.config
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_Lab10\bin\Debug\CS3260_Lab12_KH.exe
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_Lab10\bin\Debug\CS3260_Lab12_KH.pdb
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_Lab10\obj\Debug\CS3260 Lab 10.csprojAssemblyReference.cache
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_Lab10\obj\Debug\CS3260 Lab 10.csproj.CoreCompileInputs.cache
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_Lab10\obj\Debug\CS3260_Lab12_KH.exe
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_Lab10\obj\Debug\CS3260_Lab12_KH.pdb
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\obj\Debug\CS3260 Lab 10.csproj.AssemblyReference.cache
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\obj\Debug\CS3260 Lab 10.csproj.SuggestedBindingRedirects.cache
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\obj\Debug\CS3260 Lab 10.csproj.CoreCompileInputs.cache
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\obj\Debug\CS3260_Lab12_KH.exe
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\obj\Debug\CS3260_Lab12_KH.pdb
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\bin\Debug\CS3260_Lab12_KH.exe.config
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\bin\Debug\CS3260_Lab12_KH.exe
+C:\Users\lthac\OneDrive\Desktop\CS3260_Lab10 assignment\CS3260_LINQ XML assignment\CS3260_XML\bin\Debug\CS3260_Lab12_KH.pdb
+D:\School\CS\School-Projects\C#\Project7\CS3260_LINQ assignment\CS3260_LINQ LINQ assignment\CS3260_LINQ\bin\Debug\CS3260_Lab12_KH.exe.config
+D:\School\CS\School-Projects\C#\Project7\CS3260_LINQ assignment\CS3260_LINQ LINQ assignment\CS3260_LINQ\bin\Debug\CS3260_Lab12_KH.exe
+D:\School\CS\School-Projects\C#\Project7\CS3260_LINQ assignment\CS3260_LINQ LINQ assignment\CS3260_LINQ\bin\Debug\CS3260_Lab12_KH.pdb
+D:\School\CS\School-Projects\C#\Project7\CS3260_LINQ assignment\CS3260_LINQ LINQ assignment\CS3260_LINQ\obj\Debug\CS3260 Lab 10.csproj.AssemblyReference.cache
+D:\School\CS\School-Projects\C#\Project7\CS3260_LINQ assignment\CS3260_LINQ LINQ assignment\CS3260_LINQ\obj\Debug\CS3260 Lab 10.csproj.CoreCompileInputs.cache
+D:\School\CS\School-Projects\C#\Project7\CS3260_LINQ assignment\CS3260_LINQ LINQ assignment\CS3260_LINQ\obj\Debug\CS3260_Lab12_KH.exe
+D:\School\CS\School-Projects\C#\Project7\CS3260_LINQ assignment\CS3260_LINQ LINQ assignment\CS3260_LINQ\obj\Debug\CS3260_Lab12_KH.pdb

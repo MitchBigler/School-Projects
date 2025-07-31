@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{006AC096-6365-4D31-AFC3-6FE51BC375F0}|..\\UVUBank.Tests\\UVUBank.Tests.csproj|d:\\school\\cs\\school-projects\\c#\\project5\\uvubank.tests\\accountmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{006AC096-6365-4D31-AFC3-6FE51BC375F0}|..\\UVUBank.Tests\\UVUBank.Tests.csproj|d:\\school\\cs\\school-projects\\c#\\project5\\uvubank.tests\\accounttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2DC9262-1D99-46C3-AAAE-552AFC3592B8}|UVUBank.csproj|d:\\school\\cs\\school-projects\\c#\\project5\\uvubank\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2DC9262-1D99-46C3-AAAE-552AFC3592B8}|UVUBank.csproj|solutionrelative:account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2DC9262-1D99-46C3-AAAE-552AFC3592B8}|UVUBank.csproj|d:\\school\\cs\\school-projects\\c#\\project5\\uvubank\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2DC9262-1D99-46C3-AAAE-552AFC3592B8}|UVUBank.csproj|solutionrelative:accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountTests.cs",
+              "DocumentMoniker": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank.Tests\\AccountTests.cs",
+              "RelativeDocumentMoniker": "..\\UVUBank.Tests\\AccountTests.cs",
+              "ToolTip": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank.Tests\\AccountTests.cs",
+              "RelativeToolTip": "..\\UVUBank.Tests\\AccountTests.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T03:18:46.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountManager.cs",
+              "DocumentMoniker": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank\\AccountManager.cs",
+              "RelativeDocumentMoniker": "AccountManager.cs",
+              "ToolTip": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank\\AccountManager.cs",
+              "RelativeToolTip": "AccountManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T03:10:59.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank\\Account.cs",
+              "RelativeDocumentMoniker": "Account.cs",
+              "ToolTip": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank\\Account.cs",
+              "RelativeToolTip": "Account.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T03:09:08.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountManagerTests.cs",
+              "DocumentMoniker": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank.Tests\\AccountManagerTests.cs",
+              "RelativeDocumentMoniker": "..\\UVUBank.Tests\\AccountManagerTests.cs",
+              "ToolTip": "D:\\School\\CS\\School-Projects\\C#\\Project5\\UVUBank.Tests\\AccountManagerTests.cs",
+              "RelativeToolTip": "..\\UVUBank.Tests\\AccountManagerTests.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T00:51:22.9Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
