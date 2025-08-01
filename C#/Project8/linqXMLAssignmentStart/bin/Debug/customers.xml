@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Customers from Utah with purchases less than $1000-->
+<Customers>
+  <Customer ID="LD2961">
+    <First>Cailin</First>
+    <Last>Alford</Last>
+    <State>UT</State>
+  </Customer>
+  <Customer ID="LD7261">
+    <First>Jerry</First>
+    <Last>Gill</Last>
+    <State>UT</State>
+  </Customer>
+  <Customer ID="LD9918">
+    <First>Owens</First>
+    <Last>Howell</Last>
+    <State>UT</State>
+  </Customer>
+  <Customer ID="LD1042">
+    <First>Serena</First>
+    <Last>Malone</Last>
+    <State>UT</State>
+  </Customer>
+  <Customer ID="LD5537">
+    <First>Joshua</First>
+    <Last>Delaney</Last>
+    <State>UT</State>
+  </Customer>
+</Customers>

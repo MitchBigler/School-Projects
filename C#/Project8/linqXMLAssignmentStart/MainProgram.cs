@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Linq;
 using System.Threading.Tasks;
+using System.Runtime.Remoting.Messaging;
 
 namespace LINQ_Examples
 {
@@ -39,6 +40,25 @@ namespace LINQ_Examples
             //your code here
 
             Console.WriteLine("LINQ XML Query");
+
+            // customers with purchase less than $1000
+            var purchasingCustomers = customers.Where(c => c.State == "UT" && c.Price < 1000)
+                .Select(c => new XElement("Customer",
+                    new XAttribute("ID", c.ID),
+                    new XElement("First", c.First),
+                    new XElement("Last", c.Last),
+                    new XElement("State", c.State)
+                ));
+
+            // create xml
+            XDocument customerXml = new XDocument(
+                new XComment("Customers from Utah with purchases less than $1000"),
+                new XElement("Customers", purchasingCustomers)
+            );
+
+            customerXml.Save("customers.xml");
+
+            Console.WriteLine("XML file \'customers.xml\' created.");
 
             Console.ReadKey();
         }

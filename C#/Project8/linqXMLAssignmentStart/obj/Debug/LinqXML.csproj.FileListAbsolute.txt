@@ -42,3 +42,11 @@ C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipu
 C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\obj\Debug\LinqXML.csproj.CoreCompileInputs.cache
 C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.exe
 C:\Users\lthac\Dropbox\Lynn\UVU\Spring 2021\CS3260\Lessons\Lesson_11_LINQ_Manipulate_Data and XML\XML Assignment\linqXMLAssignment_Activity\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.pdb
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.exe.config
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.exe
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\bin\Debug\LINQ_Examples.pdb
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\obj\Debug\LinqXML.csproj.AssemblyReference.cache
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.exe.config
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\obj\Debug\LinqXML.csproj.CoreCompileInputs.cache
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.exe
+D:\Mitch\School-Projects\C#\Project8\linqXMLAssignmentStart\obj\Debug\LINQ_Examples.pdb
